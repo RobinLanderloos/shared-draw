@@ -6,7 +6,7 @@ PRD: docs/prd/shared-draw.md (user stories 14, 15, 21, 22, 23)
 
 ## State
 
-Open
+Completed
 
 ## What to build
 

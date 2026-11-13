@@ -4,7 +4,7 @@
       "id": "001",
       "title": "Project scaffold with health endpoint and Docker image",
       "description": "A TypeScript project with Hono, SQLite, a test runner and a Dockerfile. The running container answers a health endpoint. This proves the toolchain, the test setup and the packaging end-to-end.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/001-project-scaffold-with-health-endpoint-and-docker-image.md",
       "prdStories": [41, 42],
       "acceptanceCriteria": [
@@ -19,7 +19,7 @@
       "id": "002",
       "title": "Create a draw and receive personal links",
       "description": "A creator fills in a title, their own name, 2 to 10 options and the other participants' names, and receives one personal link per participant including their own. Covers domain validation, persistence, the create endpoint and the Dutch create page.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/002-create-a-draw-and-receive-personal-links.md",
       "prdStories": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 39, 40],
       "acceptanceCriteria": [
@@ -38,7 +38,7 @@
       "id": "003",
       "title": "Open a participant link and see the pending draw",
       "description": "A participant opens their personal link on any device and sees the title, all options with their odds, all participant names and who has accepted. Wrong or unknown links show the same neutral not-found page.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/003-open-a-participant-link-and-see-the-pending-draw.md",
       "prdStories": [16, 17, 18, 13, 37, 38, 32],
       "acceptanceCriteria": [
@@ -55,7 +55,7 @@
       "id": "004",
       "title": "Accept and trigger the draw when everyone has accepted",
       "description": "A participant accepts with one tap. When the last participant accepts, the server picks one option uniformly with a CSPRNG and stores the result permanently. The drawn state never changes afterwards.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/004-accept-and-trigger-the-draw-when-everyone-has-accepted.md",
       "prdStories": [19, 20, 24, 25, 26, 30, 45],
       "acceptanceCriteria": [
@@ -74,7 +74,7 @@
       "id": "005",
       "title": "Reveal animation on each participant's first view",
       "description": "The first time a participant loads the drawn result, they get an animated reveal and the server records revealed_at for them. Later views show the result statically. Works even if the participant opens the link days after the draw.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/005-reveal-animation-on-each-participants-first-view.md",
       "prdStories": [27, 28, 29],
       "acceptanceCriteria": [
@@ -90,7 +90,7 @@
       "id": "006",
       "title": "Decline and cancel",
       "description": "A participant can decline, which ends the draw for everyone. The creator can cancel while the draw is pending. Both end states are shown clearly to every participant.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/006-decline-and-cancel.md",
       "prdStories": [14, 15, 21, 22, 23],
       "acceptanceCriteria": [
@@ -107,7 +107,7 @@
       "id": "007",
       "title": "Expiry and retention sweeper",
       "description": "Pending draws expire after 7 days. Drawn results and declined or cancelled draws are deleted 30 days after they ended. A periodic sweeper applies both rules using an injectable clock.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/007-expiry-and-retention-sweeper.md",
       "prdStories": [33, 34, 35, 36, 44],
       "acceptanceCriteria": [
@@ -123,7 +123,7 @@
       "id": "008",
       "title": "Live page updates via server-sent events",
       "description": "An open draw page updates by itself when another participant accepts, declines, or the draw happens, using a per-draw event stream authenticated by the participant key. The app still works fully without it.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/008-live-page-updates-via-server-sent-events.md",
       "prdStories": [31],
       "acceptanceCriteria": [
@@ -138,7 +138,7 @@
       "id": "009",
       "title": "Request size limits and rate limiting",
       "description": "Protect the public endpoints from abuse with a request body size limit and basic per-IP rate limiting, while leaving the number of participants uncapped.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/009-request-size-limits-and-rate-limiting.md",
       "prdStories": [43],
       "acceptanceCriteria": [
@@ -153,7 +153,7 @@
       "id": "010",
       "title": "Deploy behind Traefik at draw-lots.lankrui.be",
       "description": "Build and run the container on the stackwise server over SSH, add the Traefik routing for draw-lots.lankrui.be without the Authentik middleware, and verify the complete flow on the live URL.",
-      "status": "open",
+      "status": "completed",
       "markdownFile": "docs/issues/010-deploy-behind-traefik-at-draw-lots-lankrui-be.md",
       "prdStories": [41],
       "acceptanceCriteria": [
